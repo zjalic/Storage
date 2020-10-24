@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['IP'] == $_SERVER['REMOTE_ADDR']) {
+if ($_SESSION['auth'] == True) {
     $filename = "../storage/" . $_GET['file'];
 
     if (file_exists($filename)) {

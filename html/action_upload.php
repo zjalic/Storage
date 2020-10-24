@@ -17,15 +17,3 @@ if (isset($_FILES["file1"])) {
   exit();
 }
 
-
-/*if(!empty($_FILES['uploaded_file']))
-  {
-    $path = "../storage/";
-    $path = $path . basename( $_FILES['uploaded_file']['name']);
-    if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
-      header("Location: content.php");
-    } else{
-        echo "There was an error uploading the file, please try again!";
-    }
-  }
-?> */

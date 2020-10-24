@@ -1,8 +1,7 @@
-
 body {
     font-family: 'Open Sans';
     color: rgb(255, 255, 255);
-    background: url("back.jpg") no-repeat center center fixed;
+    background: url("../img/back.jpeg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -11,28 +10,31 @@ body {
     width: 75%;
     height: 85vh;
     border-right: 1px dashed white;
-  }
+}
 
-  .columnv2 {
+.columnv2 {
     float: left;
     width: 24%;
-    
-  }
+}
 
-  
-  /* Clear floats after the columns */
-  .row:after {
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 a {
     color: white;
 }
+
 h3 {
     font-weight: bold;
 }
-th  {
+
+th {
     text-align: left;
     padding-right: 20px;
 }

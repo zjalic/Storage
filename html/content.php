@@ -1,14 +1,19 @@
 <?php
+//ini_set('upload_max_filesize', '10M');
+//ini_set('post_max_size', '10M');
+//ini_set('max_input_time', 300);
+//ini_set('max_execution_time', 300);   For PHP 5.4+ use |  .user.ini  |
+
 session_start();
 ?>
-<?php if (true) : ?>
+<?php if ($_SESSION == True) : ?>
     <!DOCTYPE html>
 
     <head>
         <title>Storage</title>
-        <link rel="icon" href="assets/icon.png">
+        <link rel="icon" href="assets/img/icon.png">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/styleCont.css">
+        <link rel="stylesheet" href="assets/css/stylecont.css">
 
 
     </head>
@@ -16,13 +21,13 @@ session_start();
     <body>
         <div class="row">
             <div align="center" class="column">
-                <h3>Преузимање</h3>
+                <h3>Download</h3>
                 <table>
                     <tr>
-                        <th style="padding-bottom:20px">Име</th>
-                        <th style="padding-bottom:20px">Време Измене</th>
-                        <th style="padding-bottom:20px">Величина</th>
-                        <th style="padding-bottom:20px;padding-left:15px">Избриши</th>
+                        <th style="padding-bottom:20px">Name</th>
+                        <th style="padding-bottom:20px">Modify Date</th>
+                        <th style="padding-bottom:20px">Size</th>
+                        <th style="padding-bottom:20px;padding-left:15px">Delete</th>
                     </tr>
 
                     <?php
@@ -39,7 +44,7 @@ session_start();
                             echo "<th><a href='action_download.php?file=$file' download>$file</a></th>";
                             echo "<th>$vre</th>";
                             echo "<th>$vel</th>";
-                            echo "<th> <a href='$delFile' style='padding-left:33px;text-align:center;' onclick=\"return confirm('Да ли сигурно желите да избришете фајл?')\"> <img src='assets/delete.png' alt='delete' style='text-align:center;width:20x;height:20px;border:0;'> </a> </th>";
+                            echo "<th> <a href='$delFile' style='padding-left:33px;text-align:center;' onclick=\"return confirm('Item will be deleted, are you sure?')\"> <img src='assets/img/delete.svg' alt='delete' style='text-align:center;width:20x;height:20px;border:0;'> </a> </th>";
                             echo "</tr>";
                         }
                         $broj++;
@@ -49,9 +54,9 @@ session_start();
 
             </div>
             <div align="center" class="columnv2">
-                <h3>Слање</h3>
+                <h3>Upload</h3>
                 <?php
-                $diskfs = round((disk_free_space("D:")) / pow(1024, 2), 2) . " MB";
+                $diskfs = round((disk_free_space("/")) / pow(1024, 2), 2) . " MB";
                 echo "df: " . $diskfs;
                 ?>
                 <br>

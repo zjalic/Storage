@@ -32,5 +32,5 @@ Then run container from that image with volumen so everything is saved in some s
 ```
 docker run -d -p 8080:80 -v your_folder_for_storage:/var/www/storage --name storage-1 storage
 ```
-Docker repo coming soon (maybe)
+
 

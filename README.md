@@ -1,5 +1,5 @@
 # Storage 
-It's simple Storage Server(File Transfer over HTTP).
+It's simple Storage Server(File Transfer over HTTP)
 
 ## Requirements
 * PHP 7

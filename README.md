@@ -1,5 +1,5 @@
 # Storage 
-It's simple Storage Server(File Transfer over HTTP)
+It's simple Storage Server(File Transfer over HTTP).
 
 ## Requirements
 * PHP 7
@@ -19,7 +19,7 @@ It would be good to set value as you wish
   * max_execution_time
 
 This version dont support changing within app, but soon maybe will.\
-If you want to implement use [.user.ini](https://www.php.net/configuration.file.per-user) for PHP 5.3+, otherwise use [ini_set](https://www.php.net/manual/en/function.ini-set.php)
+If you want to implement use [.user.ini](https://www.php.net/configuration.file.per-user) for PHP 5.3+, otherwise use [ini_set](https://www.php.net/manual/en/function.ini-set.php).
 
 
 ## Docker Build

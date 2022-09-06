@@ -1,5 +1,5 @@
-# File Manager 
-It's simple File Manager
+# File Share Server
+It's simple File Share Server
 
 ## Requirements
 * PHP 7

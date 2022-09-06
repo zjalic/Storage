@@ -1,4 +1,4 @@
-# File Share Server
+# Storage
 It's simple File Share Server
 
 ## Requirements
